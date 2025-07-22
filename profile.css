@@ -97,7 +97,7 @@ body {
 }
 
 .proceed:hover {
-    opacity: 1;
+    animation: fadein 0.5s ease-in-out forwards;
     border: #ff0048 2px solid;
 }
 
@@ -270,4 +270,16 @@ a:focus {
 
 a:hover {
     color: #ffffff;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0.6;
+        right: 0;
+    }
+
+    100% {
+        opacity: 1;
+        right: -2rem;
+    }
 }
