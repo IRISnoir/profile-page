@@ -1,0 +1,486 @@
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #0000ff;
+    background-image: linear-gradient(-165deg, #131313, #ffffffdd);
+    color: #ffffff
+}
+
+@font-face {
+    font-family: 'HelNaur';
+    src: url('Helvetica-Narrow/Helvetica-Narrow_Regular_\(wwww.font-cat.com\).ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BoldFont';
+    src: url('ITC\ Avant\ Garde\ Gothic/ITC\ Avant\ Garde\ Gothic\ Bold.otf') format('truetype');
+}
+
+h1:not(.blu) {
+    font-family: Times, 'Times New Roman', serif;
+    position: absolute;
+    font-size: 4rem;
+    top: 25px;
+    right: 10vw;
+    font-weight: bold;
+    background-image: linear-gradient(-165deg, #ffffff, #7e7e7e);
+    color: transparent;
+    background-clip: text;
+    z-index: 2;
+}
+
+#pfp {
+    position: relative;
+    top: -10px;
+    opacity: 75%;
+    width: 300px;
+    height: auto;
+}
+
+#zirkel {
+    background: linear-gradient(0deg, #1e1eb6, #ffffff);
+    background-position: center;
+    margin-left: 1vw;
+    border: 2px solid #00000050;
+    height: 300px;
+    width: 300px;
+    position: fixed;
+    z-index: 3;
+    overflow: hidden;
+    animation: strongfadein 1s ease-in-out forwards;
+}
+
+.card {
+    position: relative;
+    top: 110px;
+    padding: 2vw 5vw;
+    margin: 0 15vw;
+    background-color: #00000066;
+    font-family: 'HelNaur', Helvetica, Arial, sans-serif;
+    text-align: justify;
+    animation: uppies 1s ease-in-out;
+}
+
+.blu {
+    background-image: linear-gradient(-165deg, #00127a, #0300be, #000655);
+    -webkit-text-stroke: #003392 0.005vw;
+    color: transparent;
+    background-clip: text;
+    z-index: 3;
+}
+
+.trans {
+    text-align: right;
+    position: fixed;
+    right: -11vw;
+    bottom: 35rem;
+}
+
+.trans>h1 {
+    font-size: 9rem;
+    background-image: unset;
+    color: transparent;
+    -webkit-text-stroke: #ffffff 0.03rem;
+}
+
+.id {
+    animation: one 0.5s ease-in-out;
+}
+
+#k {
+    top: 3rem;
+    animation: two 1s ease-in-out;
+}
+
+#t {
+    top: 9.5rem;
+    animation: three 1s ease-in-out;
+}
+
+#s {
+    top: 16rem;
+    -webkit-text-stroke: #0000c4 0.03rem;
+    animation: four 1s ease-in-out;
+}
+
+#x {
+    font-size: 12rem;
+    top: -5vw;
+    left: 0;
+    animation: fadein 3s ease-in-out forwards, fadepulse 10s ease-in-out infinite;
+    font-family: 'BoldFont';
+    letter-spacing: -0.03em;
+}
+
+#ess {
+    animation: flash1 10s ease-in-out infinite;
+}
+
+#eee {
+    animation: flash2 10s ease-in-out infinite;
+}
+
+#ell {
+    animation: flash3 10s ease-in-out infinite;
+}
+
+#eff {
+    animation: flash4 10s ease-in-out infinite;
+}
+
+h2 {
+    font-size: 3rem;
+    top: 15rem;
+    left: -15.5rem;
+    color: #000000cc;
+    position: absolute;
+    rotate: 90deg;
+    animation: downies 1s ease-in-out;
+    font-family: Times, 'Times New Roman', serif;
+}
+
+#cycle {
+    display: inline-block;
+    width: 16ch;
+    text-align: left;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+#cycle::after {
+    content: '';
+    animation: textcycle 20s linear infinite;
+    text-align: inherit;
+    background-image: linear-gradient(90deg, #0000c4, #00007c);
+    color: transparent;
+    background-clip: text;
+}
+
+#logo {
+    position: fixed;
+    top: 5vh;
+    left: -5vw;
+    width: 25vw;
+    height: auto;
+    animation: weakfadein 1s ease-in-out forwards;
+    z-index: -5;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes weakfadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
+}
+
+@keyframes strongfadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadepulse {
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes one {
+    0% {
+        opacity: 0;
+        right: 5vw;
+    }
+
+    100% {
+        opacity: 1;
+        right: 10vw;
+    }
+}
+
+@keyframes two {
+    0% {
+        opacity: 0;
+        right: 5vw;
+    }
+
+    60% {
+        opacity: 1;
+        right: 10vw;
+    }
+
+    100% {
+        opacity: 1;
+        right: 10vw;
+    }
+}
+
+@keyframes three {
+    0% {
+        opacity: 0;
+        right: 5vw;
+    }
+
+    20% {
+        opacity: 0;
+        right: 5vw;
+    }
+
+    80% {
+        opacity: 1;
+        right: 10vw;
+    }
+
+    100% {
+        opacity: 1;
+        right: 10vw;
+    }
+}
+
+@keyframes four {
+    0% {
+        opacity: 0;
+        right: 5vw;
+    }
+
+    40% {
+        opacity: 0;
+        right: 5vw;
+    }
+
+    100% {
+        opacity: 1;
+        right: 10vw;
+    }
+}
+
+@keyframes uppies {
+    0% {
+        opacity: 0;
+        top: 150px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 110px;
+    }
+}
+
+@keyframes downies {
+    0% {
+        opacity: 0;
+        top: 12rem;
+    }
+
+    100% {
+        opacity: 1;
+        top: 15rem;
+    }
+}
+
+@keyframes flash1 {
+    0% {
+        color: transparent;
+    }
+
+    8% {
+        color: transparent;
+    }
+
+    10% {
+        color: rgba(255, 255, 255, 0.25);
+    }
+
+    12% {
+        color: transparent;
+    }
+
+    100% {
+        color: transparent;
+    }
+}
+
+@keyframes flash2 {
+    0% {
+        color: transparent;
+    }
+
+    9% {
+        color: transparent;
+    }
+
+    11% {
+        color: rgba(255, 255, 255, 0.25);
+    }
+
+    13% {
+        color: transparent;
+    }
+
+    100% {
+        color: transparent;
+    }
+}
+
+@keyframes flash3 {
+    0% {
+        color: transparent;
+    }
+
+    10% {
+        color: transparent;
+    }
+
+    12% {
+        color: rgba(255, 255, 255, 0.25);
+    }
+
+    14% {
+        color: transparent;
+    }
+
+    100% {
+        color: transparent;
+    }
+}
+
+@keyframes flash4 {
+    0% {
+        color: transparent;
+    }
+
+    11% {
+        color: transparent;
+    }
+
+    13% {
+        color: rgb(255, 255, 255);
+    }
+
+    15% {
+        color: transparent;
+    }
+
+    100% {
+        color: transparent;
+    }
+}
+
+@keyframes textcycle {
+    0% {
+        content: "TRAILBLAZING";
+        opacity: 1;
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    12% {
+        opacity: 1;
+    }
+
+    20% {
+        content: "LEADING";
+        opacity: 1;
+    }
+
+    28% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    32% {
+        opacity: 1;
+    }
+
+    40% {
+        content: "ARTISTIC";
+        opacity: 1;
+    }
+
+    48% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    52% {
+        opacity: 1;
+    }
+
+    60% {
+        content: "EXCEPTIONAL";
+        opacity: 1;
+    }
+
+    68% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    72% {
+        opacity: 1;
+    }
+
+    80% {
+        content: "TALENTED";
+        opacity: 1;
+    }
+
+    88% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    92% {
+        opacity: 1;
+    }
+
+    100% {
+        content: "TRAILBLAZING";
+        opacity: 1;
+    }
+}

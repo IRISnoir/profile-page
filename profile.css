@@ -1,0 +1,219 @@
+body {
+    background-image: linear-gradient(45deg, #0B192C, #410f2c);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@font-face {
+    font-family: BoldFont;
+    src: url("ITC\ Avant\ Garde\ Gothic/ITC\ Avant\ Garde\ Gothic\ Bold.otf");
+}
+
+@font-face {
+    font-family: Neoris;
+    src: url("Neoris/TT\ Neoris\ Trial\ Hairline.ttf");
+}
+
+.big-container {
+    position: relative;
+    margin: auto auto;
+    top: 7vh;
+    width: 75rem;
+    height: 25rem;
+}
+
+.panel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #00000000;
+    border-radius: 25px;
+    padding: 2.2rem 1.5rem;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 40px #00000081;
+}
+
+.face {
+    left: 0;
+    width: 24%;
+    background-image: linear-gradient(to bottom left, transparent, #003caa27);
+
+}
+
+.bio {
+    right: 0;
+    width: 74%;
+    background-image: linear-gradient(to top right, transparent, #b1002627);
+}
+
+.panel:hover,
+.interests:hover {
+    border-bottom: #0044ff 2px solid;
+    border-left: #0044ff 2px solid;
+    border-right: #0044ff 2px solid;
+}
+
+.interests {
+    position: relative;
+    margin: auto auto;
+    top: 5rem;
+    width: 75rem;
+    height: 15rem;
+    background-color: #00000000;
+    border-radius: 25px;
+    background-image: linear-gradient(to top, transparent, #3900a327);
+    box-shadow: 0px 0px 40px #00000081;
+}
+
+#icon1 {
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
+    width: 10rem;
+    height: 10rem;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#logo {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: -1;
+}
+
+#icon2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15rem;
+    height: 15rem;
+    opacity: 0.05;
+    z-index: -1;
+    overflow: hidden;
+
+}
+
+#logo2 {
+    position: absolute;
+    bottom: -4rem;
+    right: -4rem;
+    width: 15rem;
+    height: 15rem;
+    z-index: -1;
+}
+
+.name {
+    position: absolute;
+    top: -2.5rem;
+    left: 3rem;
+    font-family: BoldFont;
+    letter-spacing: 2px;
+}
+
+.face .name {
+    color: #0059ff;
+}
+
+.bio .name {
+    color: #ff0037;
+    left: unset;
+    right: 3rem;
+}
+
+.interests .name {
+    color: #5900ff;
+}
+
+.big {
+    font-size: 2.2rem;
+    font-family: Neoris;
+    color: #ffffff;
+}
+
+.big2 {
+    font-size: 1.5rem;
+    font-family: Neoris;
+    color: #ffffff;
+}
+
+.ski {
+    position: absolute;
+    margin-top: -3rem;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: -0.75rem;
+}
+
+.pri {
+    left: 1.5rem;
+    width: 46%;
+}
+
+.sec {
+    right: 1.5rem;
+    width: 46%;
+}
+
+.small {
+    font-size: 1.1rem;
+    font-family: Neoris;
+    color: #ffffff;
+    text-align: justify;
+}
+
+hr {
+    margin: 0 30px;
+}
+
+.info {
+    top: 1rem;
+    left: 3rem;
+}
+
+#fn {
+    margin-top: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+#exp {
+    margin-top: -1.5rem;
+    text-align: center;
+    color: #dadada;
+}
+
+.picframe {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    top: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: #2600ff44 3px solid;
+    background-image: linear-gradient(to bottom, orange, #2600ff);
+}
+
+#pfp {
+    width: 10rem;
+    height: auto;
+    opacity: 75%;
+}
+
+a,
+a:visited,
+a:active,
+a:focus {
+    color: #ffa886;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
