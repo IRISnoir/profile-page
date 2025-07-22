@@ -97,7 +97,7 @@ body {
 }
 
 .proceed:hover {
-    animation: fadein 0.5s ease-in-out forwards;
+    animation: buttonfadein 0.5s ease-in-out forwards;
     border: #ff0048 2px solid;
 }
 
@@ -200,10 +200,6 @@ li {
     width: 46%;
 }
 
-.weak {
-    opacity: 0.75;
-}
-
 .small {
     font-size: 1.1rem;
     font-family: Neoris;
@@ -269,10 +265,10 @@ a:focus {
 }
 
 a:hover {
-    color: #ffffff;
+    color: #ff5005;
 }
 
-@keyframes fadein {
+@keyframes buttonfadein {
     0% {
         opacity: 0.6;
         right: 0;
@@ -281,5 +277,15 @@ a:hover {
     100% {
         opacity: 1;
         right: -2rem;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
