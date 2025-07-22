@@ -60,9 +60,41 @@ body {
     width: 75rem;
     height: 12rem;
     background-color: #00000000;
+    padding: 1rem 1.5rem;
     border-radius: 25px;
     background-image: linear-gradient(to top, transparent, #3900a327);
     box-shadow: 0px 0px 40px #00000081;
+    box-sizing: border-box;
+}
+
+.proceed {
+    height: 100%;
+    width: 45rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom right, #99113c36, #ff00519c);
+    border-radius: 25px;
+    border-left: #ff0048 2px solid;
+    opacity: 0.6;
+}
+
+.proceed>img {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    opacity: 0.25;
+}
+
+.proceed>.big {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 3rem;
+}
+
+.proceed:hover {
+    opacity: 1;
+    border: #ff0048 2px solid;
 }
 
 #icon1 {
