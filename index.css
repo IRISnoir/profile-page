@@ -38,7 +38,7 @@ a:focus {
     text-align: center;
 }
 
-div:hover+a {
+div:hover+img {
     opacity: 0.25;
     animation: dim 2s ease-in-out;
 }
