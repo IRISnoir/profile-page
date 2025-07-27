@@ -18,7 +18,8 @@ body {
     position: relative;
     margin: auto auto;
     top: 7vh;
-    width: 75rem;
+    width: 80vw;
+    min-width: 66rem;
     height: 25rem;
 }
 
@@ -64,7 +65,8 @@ body {
     position: relative;
     margin: auto auto;
     top: 5rem;
-    width: 75rem;
+    width: 80vw;
+    min-width: 66rem;
     height: 12rem;
     background-color: #00000000;
     padding: 1rem 1.5rem;
@@ -82,7 +84,7 @@ body {
 
 .proceed {
     height: 100%;
-    width: 45rem;
+    width: 55%;
     position: absolute;
     top: 0;
     right: 0;
@@ -102,7 +104,7 @@ body {
 
 .proceed>.big {
     position: absolute;
-    right: 1.5rem;
+    right: 1.5vw;
     bottom: 3rem;
 }
 
@@ -218,12 +220,23 @@ li {
 }
 
 .small2 {
+    position: absolute;
     font-size: 0.8rem;
     font-family: Neoris;
     margin-top: 0rem;
     margin-bottom: 0rem;
     color: #ffffff80;
     text-align: right;
+}
+
+.i1 {
+    bottom: 15px;
+    right: 15px;
+}
+
+.i2 {
+    bottom: 30px;
+    right: 15px;
 }
 
 hr {
