@@ -52,6 +52,15 @@ body {
     border-bottom-left-radius: 15px;
 }
 
+#gitlogo {
+    position: absolute;
+    bottom: 15px;
+    width: 2rem;
+    height: auto;
+    left: 65px;
+    border-radius: 50%;
+}
+
 @keyframes bluify {
     0% {
         background-color: #00000000;
@@ -62,8 +71,22 @@ body {
     }
 }
 
+@keyframes purpify {
+    0% {
+        background-color: #00000000;
+    }
+
+    100% {
+        background-color: #52009e;
+    }
+}
+
 #fblogo:hover {
     animation: bluify 1s ease-in-out forwards;
+}
+
+#gitlogo:hover {
+    animation: purpify 1s ease-in-out forwards;
 }
 
 .bio {

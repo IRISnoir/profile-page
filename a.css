@@ -8,6 +8,11 @@
     src: url('Helvetica-Narrow/Helvetica-Narrow_Regular_\(wwww.font-cat.com\).ttf') format('truetype');
 }
 
+@font-face {
+    font-family: Neoris;
+    src: url("Neoris/TT\ Neoris\ Trial\ Hairline.ttf");
+}
+
 body {
     height: 100%;
     background-repeat: no-repeat;
@@ -19,7 +24,7 @@ body {
 h1 {
     font-family: 'BoldFont';
     position: fixed;
-    font-size: 15vh;
+    font-size: 8vw;
     left: -30px;
     letter-spacing: -0.06em;
     background-image: linear-gradient(45deg,
@@ -28,6 +33,98 @@ h1 {
     color: transparent;
     background-clip: text;
     animation: pulse 10s infinite;
+}
+
+.big-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: 3vw;
+    top: 5vh;
+    height: 18vh;
+    width: 55vw;
+    min-width: 40rem;
+}
+
+.category {
+    font-family: Neoris;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.gitframe {
+    position: absolute;
+    background-image: linear-gradient(to top right, #120a213b, #150e236f);
+    border-radius: 9vh;
+    border: #190731 2px solid;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.gitframe:hover {
+    animation: dim 1s ease-in-out forwards;
+}
+
+.mini1 {
+    width: 49%;
+    left: 0;
+}
+
+.mini2 {
+    width: 49%;
+    right: 0;
+}
+
+.blu {
+    border-right: #0040ff 2px solid;
+}
+
+.purp {
+    border-right: #9500ff 2px solid;
+}
+
+.red {
+    border-right: rgb(255, 94, 40) 2px solid;
+}
+
+.title {
+    font-family: Neoris;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-left: 1rem;
+}
+
+.desc {
+    color: #c6c6c69f;
+    margin-top: -2rem;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.role {
+    font-size: 1.2rem;
+    font-style: italic;
+    position: absolute;
+    top: -0.75rem;
+    right: 2rem;
+    color: #babababb
+}
+
+.lang {
+    font-size: 0.65rem;
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    color: #babababb;
+}
+
+.design {
+    width: 100%;
+    border-radius: 9vh;
+    border: #fff 2px solid;
 }
 
 @keyframes pulse {
@@ -41,5 +138,21 @@ h1 {
 
     100% {
         opacity: 0.25;
+    }
+}
+
+@keyframes dim {
+    0% {
+        background-color: #00000000;
+        border-top: #190731 2px solid;
+        border-bottom: #190731 2px solid;
+        border-left: #190731 2px solid;
+    }
+
+    100% {
+        background-color: #0000004b;
+        border-top: #ff006f 2px solid;
+        border-bottom: #ff006f 2px solid;
+        border-left: #ff006f 2px solid;
     }
 }
