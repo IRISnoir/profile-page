@@ -53,6 +53,11 @@ h1 {
     left: 1rem;
 }
 
+.back p, .user p {
+    font-family: Neoris;
+    font-weight: bold;
+}
+
 #logoback {
     position: absolute;
     height: 15.5vh;
@@ -89,12 +94,14 @@ h1 {
     bottom: 20vh;
     color: #891d53;
     padding: 0;
+    width: 20vw;
     letter-spacing: 2px;
     line-height: 2px;
     border: #df2f87 2px solid;
     animation: fadein 1s ease-in-out forwards;
     border-radius: 3rem;
     text-decoration: none;
+    text-align: center;
 }
 
 .user:hover {
