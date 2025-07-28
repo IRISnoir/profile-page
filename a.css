@@ -37,8 +37,8 @@ h1 {
 
 .back {
     position: fixed;
-    font-size: 1.5rem;
-    width: 10rem;
+    font-size: 2vw;
+    width: 20vw;
     text-align: center;
     color: #891d53;
     padding: 0;
@@ -53,8 +53,16 @@ h1 {
     left: 1rem;
 }
 
+#logoback {
+    position: absolute;
+    height: 7vw;
+    top: -3vh;
+    left: 0;
+    opacity: 0.5;
+}
+
 .back:hover {
-    animation: fadein 1s ease-in-out forwards, backdim 1s ease-in-out forwards;
+    animation: fadein 1s ease-in-out forwards, backdim 0.5s ease-in-out forwards;
 }
 
 @keyframes backdim {
@@ -66,7 +74,7 @@ h1 {
     }
 
     100% {
-        left: -1.3rem;
+        left: -2rem;
         background-color: #0B192C;
         color: #fff;
         border: #0044ff 2px solid;
@@ -108,7 +116,7 @@ h1 {
     position: absolute;
     width: 20rem;
     right: 0;
-    z-index: -1;
+    z-index: -2;
     opacity: 0.25;
     top: 0;
 }
@@ -118,7 +126,7 @@ h1 {
     margin-left: auto;
     margin-right: 3vw;
     top: 5vh;
-    height: 18vh;
+    height: 7.5rem;
     width: 55vw;
     min-width: 40rem;
 }
@@ -200,6 +208,15 @@ h1 {
     bottom: 0;
     right: 2rem;
     color: #babababb;
+}
+
+.langlogo {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 2rem;
+    z-index: -1;
+    opacity: 0.5;
 }
 
 .design {
