@@ -98,14 +98,37 @@ body {
 }
 
 .panel:hover {
-    border-bottom: #0044ff 2px solid;
-    border-left: #0044ff 2px solid;
-    border-right: #0044ff 2px solid;
+    animation: fadein 1s ease-in-out 0.2s forwards, pnlhov 0.25s ease-in-out forwards;
+}
+
+@keyframes pnlhov {
+    0% {
+        border-bottom: #0044ff00 2px solid;
+        border-left: #0044ff00 2px solid;
+        border-right: #0044ff00 2px solid;
+    }
+
+    100% {
+        border-bottom: #0044ff 2px solid;
+        border-left: #0044ff 2px solid;
+        border-right: #0044ff 2px solid;
+    }
 }
 
 .interests:hover {
-    border-bottom: #0044ff 2px solid;
-    border-left: #0044ff 2px solid;
+    animation: fadein 1s ease-in-out 0.2s forwards, inthov 0.25s ease-in-out forwards;
+}
+
+@keyframes inthov {
+    0% {
+        border-bottom: #0044ff00 2px solid;
+        border-left: #0044ff00 2px solid;
+    }
+
+    100% {
+        border-bottom: #0044ff 2px solid;
+        border-left: #0044ff 2px solid;
+    }
 }
 
 .interests {

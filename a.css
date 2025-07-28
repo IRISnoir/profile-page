@@ -51,6 +51,7 @@ h1 {
     font-size: 3rem;
     margin-bottom: 0;
     text-align: right;
+    animation: fadein 1s ease-in-out forwards;
 }
 
 .gitframe {
@@ -61,10 +62,12 @@ h1 {
     box-sizing: border-box;
     padding: 10px 10px;
     width: 100%;
+    animation: fadein 1s ease-in-out 0.5s forwards;
+    opacity: 0;
 }
 
 .gitframe:hover {
-    animation: dim 1s ease-in-out forwards;
+    animation: fadein 1s ease-in-out 0.5s forwards, dim 1s ease-in-out forwards;
 }
 
 .mini1 {
@@ -125,6 +128,16 @@ h1 {
     width: 100%;
     border-radius: 9vh;
     border: #fff 2px solid;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes pulse {
