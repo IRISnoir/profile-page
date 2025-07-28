@@ -35,9 +35,78 @@ h1 {
     animation: pulse 10s infinite;
 }
 
+.back {
+    position: fixed;
+    font-size: 1.5rem;
+    width: 10rem;
+    text-align: center;
+    color: #891d53;
+    padding: 0;
+    letter-spacing: 0px;
+    line-height: 0;
+    border: #ff0077 2px solid;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    background-color: #1812253f;
+    animation: fadein 1s ease-in-out forwards;
+    text-decoration: none;
+    left: 1rem;
+}
+
+.back:hover {
+    animation: fadein 1s ease-in-out forwards, backdim 1s ease-in-out forwards;
+}
+
+@keyframes backdim {
+    0% {
+        left: 1rem;
+        background-color: #1812253f;
+        color: #891d53;
+        border: #ff0077 2px solid;
+    }
+
+    100% {
+        left: -1.3rem;
+        background-color: #0B192C;
+        color: #fff;
+        border: #0044ff 2px solid;
+    }
+}
+
+.user {
+    position: fixed;
+    font-size: 2vw;
+    left: 6vw;
+    bottom: 20vh;
+    color: #891d53;
+    padding: 0;
+    letter-spacing: 2px;
+    line-height: 2px;
+    border: #df2f87 2px solid;
+    animation: fadein 1s ease-in-out forwards;
+    border-radius: 3rem;
+    text-decoration: none;
+}
+
+.user:hover {
+    animation: fadein 1s ease-in-out forwards, specdim 1s ease-in-out forwards;
+}
+
+@keyframes specdim {
+    0% {
+        background-color: #00000000;
+        color: #891d53;
+    }
+
+    100% {
+        background-color: #00000036;
+        color: #ff0080;
+    }
+}
+
 #victory {
     position: absolute;
-    width: 20vw;
+    width: 20rem;
     right: 0;
     z-index: -1;
     opacity: 0.25;
