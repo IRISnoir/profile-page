@@ -55,7 +55,8 @@ h1 {
     z-index: 2;
 }
 
-.back p, .user p {
+.back p,
+.user p {
     font-family: Neoris;
     font-weight: bold;
 }
@@ -128,8 +129,9 @@ h1 {
     width: 20rem;
     right: 0;
     z-index: -2;
-    opacity: 0.25;
+    opacity: 0;
     top: -6rem;
+    animation: weakfadein 1s ease-in-out 0.65s forwards;
 }
 
 .big-container {
@@ -245,6 +247,16 @@ h1 {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes weakfadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.25;
     }
 }
 
