@@ -37,7 +37,7 @@ h1 {
 
 .back {
     position: fixed;
-    font-size: 2vw;
+    font-size: 4.2vh;
     width: 20vw;
     text-align: center;
     color: #891d53;
@@ -55,8 +55,8 @@ h1 {
 
 #logoback {
     position: absolute;
-    height: 7vw;
-    top: -3vh;
+    height: 15.5vh;
+    top: -3.5vh;
     left: 0;
     opacity: 0.5;
 }
@@ -74,7 +74,7 @@ h1 {
     }
 
     100% {
-        left: -2rem;
+        left: -2vw;
         background-color: #0B192C;
         color: #fff;
         border: #0044ff 2px solid;
