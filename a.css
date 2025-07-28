@@ -124,6 +124,7 @@ h1 {
         background-color: #00000036;
         color: #ff0080;
         border: #ff0080 2px solid;
+        box-shadow: 0px 0px 40px #ff004081;
     }
 }
 
@@ -290,5 +291,6 @@ h1 {
         border-top: #ff006f 2px solid;
         border-bottom: #ff006f 2px solid;
         border-left: #ff006f 2px solid;
+        box-shadow: 0px 0px 10px #ff004081;
     }
 }
