@@ -357,7 +357,17 @@ a:focus {
 }
 
 a:hover {
-    color: #ffe605;
+    animation: linkhover 0.5s ease-in-out forwards;
+}
+
+@keyframes linkhover {
+    0% {
+        color: #ffa886;
+    }
+
+    100% {
+        color: #ffe605;
+    }
 }
 
 @keyframes buttonfadein {
