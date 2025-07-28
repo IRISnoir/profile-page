@@ -44,7 +44,7 @@ h1 {
     padding: 0;
     letter-spacing: 0px;
     line-height: 0;
-    border: #ff0077 2px solid;
+    border: #0e031e 2px solid;
     border-top-left-radius: 5rem;
     border-bottom-left-radius: 5rem;
     background-color: #1812253f;
@@ -70,7 +70,7 @@ h1 {
         left: 1rem;
         background-color: #1812253f;
         color: #891d53;
-        border: #ff0077 2px solid;
+        border: #540070 2px solid;
     }
 
     100% {
