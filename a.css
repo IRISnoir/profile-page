@@ -117,11 +117,13 @@ h1 {
     0% {
         background-color: #00000000;
         color: #891d53;
+        border: #df2f87 2px solid;
     }
 
     100% {
         background-color: #00000036;
         color: #ff0080;
+        border: #ff0080 2px solid;
     }
 }
 
