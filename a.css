@@ -98,6 +98,7 @@ h1 {
     color: #891d53;
     padding: 0;
     width: 20vw;
+    min-width: 10rem;
     letter-spacing: 2px;
     line-height: 2px;
     border: #df2f87 2px solid;
